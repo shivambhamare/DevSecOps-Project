@@ -1,11 +1,11 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: netflix-deploy
+  name: netflix-app
   labels:
     app: netflix-app
 spec:
-  replicas: 2
+  replicas: 3
   selector:
     matchLabels:
       app: netflix-app
@@ -15,7 +15,8 @@ spec:
         app: netflix-app
     spec:
       containers:
-      - name: netflix
+      - name: netflix-container
         image: shivambhamare/sample:latest
+        imagePullPolicy: Always
         ports:
         - containerPort: 80
