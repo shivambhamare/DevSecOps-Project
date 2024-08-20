@@ -15,7 +15,7 @@ spec:
         app: netflix-app
     spec:
       containers:
-      - name: shivambhamare/sample:v.1.latest
+      - name: shivambhamare/sample:v.1.x
         image: nginx
         ports:
         - containerPort: 80
