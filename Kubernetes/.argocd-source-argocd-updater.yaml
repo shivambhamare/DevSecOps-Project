@@ -1,0 +1,3 @@
+kustomize:
+  images:
+  - shivambhamare/sample:v0.1.13
