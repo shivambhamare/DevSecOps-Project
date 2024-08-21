@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: netflix-container
-        image: shivambhamare/sample:v8
+        image: shivambhamare/sample:v0.1.13
         imagePullPolicy: Always
         ports:
         - containerPort: 80
