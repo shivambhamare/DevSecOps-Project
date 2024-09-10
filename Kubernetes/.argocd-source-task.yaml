@@ -1,0 +1,3 @@
+kustomize:
+  images:
+  - shivambhamare/registerapp:1.11
